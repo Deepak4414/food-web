@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="header.css">
+   
+    <style>
+        #menu {
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 20px 40px;
+            background: rgb(245, 242, 242);
+            min-height: 100vh;
+            /* margin-bottom: 20px; */
+        }
+
+        .heading {
+            background: rgb(245, 242, 242);
+            color: #373333;
+            margin-bottom: 30px;
+            padding: 60px 0 30px 0;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        .heading h3 {
+            font-weight: 600;
+            font-size: 22px;
+            letter-spacing: 5px;
+        }
+
+        .card {
+            display: grid;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 10px 20px;
+        }
+
+        .card img {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .details {
+            padding: 20px 10px;
+            display: grid;
+            grid-template-rows: auto 1fr 50px;
+            grid-row-gap: 15px;
+        }
+
+        .details-sub {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .details-sub h5 {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .price {
+            text-align: right;
+        }
+
+        .details p {
+            color: #6f6f6f;
+            font-size: 15px;
+            line-height: 25px;
+            align-self: stretch;
+        }
+
+        .order {
+            margin-left: 150px;
+            margin-top: -80px;
+            width: 120px;
+
+        }
+
+        .myButton {
+            padding: 10px 20px 8px 12px;
+            background: peru;
+            border-radius: 12px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(46, 225, 37);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <nav class="navbar">
+        <ul class="menu-items">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="booking.html">Book Table</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+    <div id="menu">
+        <div class="heading">
+            <h1>Menu</h1>
+            <h3>Today's Special</h3>
+        </div>
+        <div class="card">
+            <img src="img/wallpaperflare.com_wallpaper (1).jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Roll</h5>
+                    <h5 class="price"> ₹10 </h5>
+                </div>
+                <p>An egg roll is a popular Asian dish consisting of a thin crepe-like wrapper filled with a mixture of
+                    vegetables,
+                    meat, and sometimes noodles. It is usually fried until crispy and served with dipping sauces</p>
+
+            </div>
+            <div class="order">
+                <a href="payment_page.php?item=Roll" class="myButton">Buy</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/wallpaperflare.com_wallpaper (2).jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Sandwhich</h5>
+                    <h5 class="price"> ₹10 </h5>
+                </div>
+                <p>Delight in our array of sandwiches: from the savory richness of the Ultimate Reuben with corned beef,
+                    Swiss cheese, and sauerkraut on rye, to the Mediterranean Panini's grilled chicken, roasted peppers,
+                    spinach, and feta on ciabatta. Don't miss the freshness of the Caprese
+                    Baguette, a fusion of mozzarella, tomatoes, basil, and balsamic on toasted bread..</p>
+
+            </div>
+            <div class="order">
+                <a href="payment_page.php?item=Sandwich" class="myButton">Buy</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/wallpaperflare.com_wallpaper.jpg" alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>French Fries</h5>
+                    <h5 class="price"> ₹8 </h5>
+                </div>
+                <p>French fries, a beloved and iconic side dish, are made by slicing potatoes into thin strips, frying
+                    them until golden and crispy, and seasoning with salt. Their irresistible combination of a crispy
+                    exterior and tender interior has made them a
+                    staple in fast-food and casual dining establishments worldwide.</p>
+
+            </div>
+            <div class="order">
+                <a href="payment_page.php?item=French Fries" class="myButton">Buy</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Pizza</h5>
+                    <h5 class="price"> ₹12 </h5>
+                </div>
+                <p>Pizza, a globally adored dish, consists of a round, flat crust topped with tomato sauce, cheese, and
+                    various ingredients like meats, vegetables, and herbs. Baked to perfection, it offers a delightful
+                    blend of flavors and textures that can be customized to suit
+                    individual preferences, making it a universally cherished culinary delight.</p>
+            </div>
+            <div class="order">
+                <a href="payment_page.php?item=Pizza" class="myButton">Buy</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1899&q=80"
+                alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Burgers</h5>
+                    <h5 class="price"> ₹15 </h5>
+                </div>
+                <p>Burgers, a beloved and classic food choice, consist of a flavorful meat patty, often beef, cooked to
+                    perfection and served within a soft bun. Accompanied by an array of toppings and condiments, from
+                    crisp lettuce and juicy tomatoes to melted cheese and tangy sauces, burgers offer a mouthwatering
+                    blend of tastes and textures that have secured
+                    their place as a timeless favorite in the culinary world.</p>
+            </div>
+            <div class="order">
+                <a href="payment_page.php?item=Burger" class="myButton">Buy</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                alt="">
+            <div class="details">
+                <div class="details-sub">
+                    <h5>Chicken</h5>
+                    <h5 class="price"> ₹14 </h5>
+                </div>
+                <p>Chicken, a versatile and widely enjoyed protein, is a staple in various cuisines. It can be prepared
+                    in numerous ways, including grilling, roasting, frying, or simmering, resulting in a range of
+                    textures and flavors. From crispy fried chicken to tender roasted dishes,
+                    chicken's adaptability makes it a centerpiece in a variety of culinary creations.</p>
+            </div>
+            <div class="order">
+                <a href="payment_page.php?item=Chicken" class="myButton">Buy</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

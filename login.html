@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css">
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 200px 130px -30px -30px;
+        padding: 0;
+        background-image: url(img/fro.jpg);
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: aqua;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .reg {
+        color: red;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="container">
+      <h1>Login Page</h1>
+      <form method="post" action="login.php">
+        <label for="user_name">User Name No:</label>
+        <input type="text" id="user_name" name="user_name" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <input type="submit" value="Login" />
+        <div class="reg">
+          <a href="registration.html">For Registration</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

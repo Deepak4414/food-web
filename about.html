@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Description</title>
+   <link rel="stylesheet" href="header.css">
+   <style>
+    /* Reset some default styling */
+body, h1, h2, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #e79f9f;
+    padding: 80px 0 20px 0;
+    text-align: center;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.description-content {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    background-color: #c049a4;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.description-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 380px 0 20px;
+}
+.description-image2 img {
+    display: flex;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: -403px 0 0 580px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #eab2b2;
+}
+
+   </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu-items">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="booking.html">Book Table</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Delicious Delights Restaurant</h1>
+    </header>
+    
+    <section class="description">
+        <div class="description-content">
+            <h2>About Us</h2>
+            <p>Welcome to Delicious Delights, your culinary destination for exquisite flavors and unforgettable dining experiences. At our restaurant, we are passionate about serving dishes that tantalize your taste buds and create lasting memories.</p>
+            <p>Our carefully curated menu features a variety of mouthwatering options, prepared by our skilled chefs using the freshest ingredients. From appetizers to desserts, each dish is a work of art that combines creativity and tradition.</p>
+            <p>Whether you're celebrating a special occasion or simply seeking a delightful meal, we invite you to join us and indulge in the magic of culinary craftsmanship. Your satisfaction is our top priority, and we strive to provide impeccable service in a warm and inviting atmosphere.</p>
+        </div>
+        <div class="description-image">
+            <img src="img/about-1.jpg" alt="Restaurant Interior">
+        </div>
+        <div class="description-image2">
+            <img src="img/about-2.jpg" alt="Restaurant Interior">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Delicious Delights. All rights reserved.</p>
+    </footer>
+</body>
+</html>

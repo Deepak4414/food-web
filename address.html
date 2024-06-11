@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Information</title>
+    <link rel="stylesheet" href="address.css"> <!-- You can link a CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Address Information</h1>
+    </header>
+
+    <div class="address-form">
+        <form action="payment_page.php" method="post"> <!-- This form action can be adjusted based on your workflow -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required>
+
+            <input type="submit" value="Continue to Payment">
+        </form>
+    </div>
+</body>
+</html>
